@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:twitter_clone/features/view/login_view.dart';
+import 'package:twitter_clone/features/view/view.dart';
 import 'package:twitter_clone/theme/theme.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Twitter Clone',
       theme: AppTheme.theme,
-      home: const LoginView(),
+      home: const SignupView(),
     );
   }
 }

@@ -6,18 +6,18 @@ import 'package:twitter_clone/features/widgets/widgets.dart';
 import 'package:twitter_clone/theme/theme.dart';
 import 'package:flutter/gestures.dart';
 
-class LoginView extends StatefulWidget {
+class SignupView extends StatefulWidget {
   static route() => MaterialPageRoute(
-        builder: (context) => const LoginView(),
+        builder: (context) => const SignupView(),
       );
 
-  const LoginView({super.key});
+  const SignupView({super.key});
 
   @override
-  State<LoginView> createState() => _LoginViewState();
+  State<SignupView> createState() => _SignupViewState();
 }
 
-class _LoginViewState extends State<LoginView> {
+class _SignupViewState extends State<SignupView> {
   final appbar = UIConstants.appBar();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
@@ -75,7 +75,7 @@ class _LoginViewState extends State<LoginView> {
                     ),
                     children: [
                       TextSpan(
-                        text: ' Sign Up',
+                        text: ' Log In',
                         style: const TextStyle(
                           color: Pallete.blueColor,
                           fontSize: 16,
@@ -84,7 +84,7 @@ class _LoginViewState extends State<LoginView> {
                           ..onTap = () {
                             Navigator.push(
                               context,
-                              SignupView.route(),
+                              LoginView.route(),
                             );
                           },
                       ),
